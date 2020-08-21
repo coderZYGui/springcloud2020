@@ -18,9 +18,9 @@ public class CommonResult<T> {
 
     private Integer code;
     private String message;
-    private T data;
+    private T data;        //泛型，对应类型的json数据
 
     public CommonResult(Integer code, String message) {
-        this(code, message, null);
+        this(code, message, null);  // 调用全参构造方法
     }
 }
