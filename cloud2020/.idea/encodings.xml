@@ -6,6 +6,8 @@
     <file url="file://$PROJECT_DIR$/cloud-api-commons/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-consumer-order80/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-consumer-order80/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-consumer_zk-order80/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-consumer_zk-order80/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-server7001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-server7001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-server7002/src/main/java" charset="UTF-8" />
@@ -15,6 +17,8 @@
     <file url="file://$PROJECT_DIR$/cloud-provider-payment-8001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-payment-8002/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-payment-8002/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider_zk-payment8004/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider_zk-payment8004/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

@@ -11,6 +11,8 @@
         <module name="cloud-api-commons" />
         <module name="cloud-eureka-server7002" />
         <module name="cloud-eureka-server7001" />
+        <module name="cloud-consumer_zk-order80" />
+        <module name="cloud-provider_zk-payment8004" />
         <module name="cloud-consumer-order80" />
         <module name="cloud-provider-payment-8001" />
       </profile>
