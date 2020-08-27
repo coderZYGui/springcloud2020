@@ -15,6 +15,6 @@ ribbon:
 
 # 这里测试 80 --> 8001 , 80中controller中写了熔断降级的方法, 设置的超时时间为1.5秒, 如果小于8001中的超时时间,就会在controller进行降级
 # 这里设置超时时间 > 8001里面的超时时间, 可能会仍然调用controller降级方法, 这里将下面注释即可;
-#feign:
-#  hystrix:
-#    enabled: true #如果处理自身的容错就开启。开启方式与生产端不一样。
+feign:
+  hystrix:
+    enabled: true #如果处理自身的容错就开启。开启方式与生产端不一样。
