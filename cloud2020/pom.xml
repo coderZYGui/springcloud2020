@@ -15,12 +15,13 @@
         <module>cloud-eureka-server7002</module>
         <module>cloud-provider-payment-8002</module>
         <module>cloud-provider_zk-payment8004</module>
-      <module>cloud-consumer_zk-order80</module>
+        <module>cloud-consumer_zk-order80</module>
         <module>cloud-provider_consul-payment8006</module>
         <module>cloud-consumer_consul-order80</module>
         <module>cloud-consumer-feign-order80</module>
         <module>cloud-provider-hystrix-payment8001</module>
         <module>cloud-consumer-feign-hystrix-order80</module>
+      <module>cloud-consumer-hystrix_dashboard9001</module>
     </modules>
     <packaging>pom</packaging>
 
