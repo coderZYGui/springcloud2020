@@ -20,6 +20,7 @@
         <module name="cloud-provider_consul-payment8006" />
         <module name="cloud-consumer_consul-order80" />
         <module name="cloud-provider_zk-payment8004" />
+        <module name="cloud-gateway-gateway9527" />
         <module name="cloud-consumer-feign-order80" />
         <module name="cloud-consumer-hystrix_dashboard9001" />
       </profile>
