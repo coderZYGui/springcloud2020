@@ -32,6 +32,11 @@ public class PaymentController {
     @Resource
     private DiscoveryClient discoveryClient;    //springframework的DiscoveryClient（不要导错包了）
 
+    @GetMapping("/payment/lb")
+    public String paymentZk() {
+        return "serverPort: " + serverPort;
+    }
+
     @PostMapping("/payment/create")
     public CommonResult create(@RequestBody Payment payment) {
         int result = paymentService.create(payment);
