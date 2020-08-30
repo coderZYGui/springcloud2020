@@ -11,7 +11,22 @@ spring:
           uri: https://github.com/coderZYGui/springcloud-config.git # 仓库地址
           search-paths:
             - springcloud-config
-      label: dev #读取分支
+      label: master #读取分支
+
+#添加rabbitmq相关支持
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+#rabbitmq相关配置，暴露bus舒心配置的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'  #为什么配置 bus-refresh，看传染病那张图
+
 
 eureka:
   client:

@@ -1,5 +1,5 @@
 server:
-  port: 3355 #端口
+  port: 3366 #端口
 
 spring:
   application: #名称
@@ -9,7 +9,7 @@ spring:
     config:
       label: master  #分支名称
       name: config  #配置文件名称
-      profile: dev   # 读取后缀名称   上述3个综合：3355读取master分支上http://localhost:3344/master/config-dev.yml的config-dev.yml
+      profile: dev   # 读取后缀名称   上述3个综合：3366读取master分支上http://localhost:3344/master/config-dev.yml的config-dev.yml
       uri: http://localhost:3344   #配置中心地址
   #添加rabbitmq相关支持
   rabbitmq:
