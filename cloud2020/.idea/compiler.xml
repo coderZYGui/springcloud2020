@@ -11,12 +11,14 @@
         <module name="cloud-provider-payment-8001" />
         <module name="cloud-20202020" />
         <module name="cloud-provider-hystrix-payment8001" />
+        <module name="cloud-config-center-3344" />
         <module name="cloud-eureka-server7002" />
         <module name="cloud-eureka-server7001" />
         <module name="cloud-consumer-order80" />
         <module name="cloud-api-commons" />
         <module name="cloud-consumer_zk-order80" />
         <module name="cloud-consumer-feign-hystrix-order80" />
+        <module name="cloud-config-client-3355" />
         <module name="cloud-provider_consul-payment8006" />
         <module name="cloud-consumer_consul-order80" />
         <module name="cloud-provider_zk-payment8004" />
