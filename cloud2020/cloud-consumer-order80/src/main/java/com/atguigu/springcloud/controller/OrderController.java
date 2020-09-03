@@ -21,7 +21,7 @@ import javax.annotation.Resource;
 @Slf4j
 public class OrderController {
 
-//    public static final String PAYMENT_URL = "http://localhost:8001";
+    //    public static final String PAYMENT_URL = "http://localhost:8001";
     public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
     @Resource
@@ -51,9 +51,14 @@ public class OrderController {
         if (entity.getStatusCode().is2xxSuccessful()) {
             log.info(entity.getStatusCode() + "\t" + entity.getHeaders());
             return entity.getBody();
-        }else{
+        } else {
             return new CommonResult<>(444, "操作失败");
         }
+    }
+
+    @GetMapping("/consumer/payment/zipkin")
+    public String paymentZipkin() {
+        return restTemplate.getForObject(PAYMENT_URL + "/payment/zipkin", String.class);
     }
 
 }
