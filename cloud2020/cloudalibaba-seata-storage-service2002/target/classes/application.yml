@@ -1,0 +1,34 @@
+server:
+  port: 2002
+
+spring:
+  application:
+    name: seata-storage-service
+  cloud:
+    alibaba:
+      seata:
+        # 自定义事务组名称需要与seata-server中的对应
+        tx-service-group: fsp_tx_group #因为seata的file.conf文件中没有service模块，事务组名默认为my_test_tx_group
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848  #nacos
+  datasource:
+    # mysql驱动类
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3305/seata_storage
+    username: root
+    password: 1111
+feign:
+  hystrix:
+    enabled: false
+#ribbon的超时时间
+#ribbon:
+#  ReadTimeout: 10000
+#  ConnectTimeout: 10000
+logging:
+  level:
+    io:
+      seata: info
+
+mybatis:
+  mapperLocations: classpath*:mapper/*.xml
